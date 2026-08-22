@@ -1,0 +1,47 @@
+body {
+    background-color: #f8f7f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0%;
+
+}
+
+.container {
+    background-color: white;
+    width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+h1 {
+    color: #5c8d76;
+}
+
+.descricao {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#botao-desafio{
+
+    background-color: #b7e4c7;
+    border:none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 1.05s ease;
+
+
+}
+
+#botao-desafio:hover {
+    transform: scale(1.3);
+}   
