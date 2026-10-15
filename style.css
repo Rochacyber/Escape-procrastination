@@ -5,8 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0%;
-
+    margin: 0;
 }
 
 .container {
@@ -16,7 +15,6 @@ body {
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-
 }
 
 h1 {
@@ -28,20 +26,49 @@ h1 {
     margin-bottom: 30px;
 }
 
-#botao-desafio{
-
+#botao-desafio, #botao-finalizar {
     background-color: #b7e4c7;
-    border:none;
+    border: none;
     padding: 15px 35px;
     border-radius: 30px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    transition: 1.05s ease;
-
-
+    transition: 0.3s ease;
 }
 
-#botao-desafio:hover {
-    transform: scale(1.3);
-}   
+#botao-desafio:hover, #botao-finalizar:hover {
+    transform: scale(1.1);
+}
+
+#botao-desafio:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+}
+
+/* precisa ficar por último */
+.escondido {
+    display: none;
+}
